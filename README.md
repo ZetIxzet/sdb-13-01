@@ -73,14 +73,14 @@ PostgreSQL 8.3.6 - Low Cost Function Information Disclosure https://www.exploit-
 ### Решение
 
 SYN: отправляются SYN пакеты на все сканируемые порты. Открытые порты отвечают пакетом SYN ACK, закрытые порты отвечают RST ACK
-![sS](
+![sS](https://github.com/ZetIxzet/sdb-13-01/blob/main/172427.png)
 
 FIN: отправляются FIN пакеты на все сканируемые порты. Закрытые порты отвечают RST. Остальные молчат.
-![sF](
+![sF](https://github.com/ZetIxzet/sdb-13-01/blob/main/172445.png)
 
 Xmas: отправляются пакеты c флагами FIN, PSH и URG на все сканируемые порты. Закрытые порты отвечают RST ACK. Остальные молчат.
-![sX](
+![sX](https://github.com/ZetIxzet/sdb-13-01/blob/main/172513.png)
 
 UDP: отправляются UDP пакеты. Для большинства портов пустые, но для некоторых популярных отправляется специфический для протокола payload. Дальше состояние порта определяется по наличию/отсутствию ответа UDP или ICNP.
-![sU](
+![sU](https://github.com/ZetIxzet/sdb-13-01/blob/main/172638.png)
 
